@@ -1,10 +1,5 @@
 # Farmassist IoT Device Simulator
 
-*[Ray Jasson](mailto:holmesqueen2070@yahoo.com)*<br>
-*31/01/2021*<br>
-
-<br>
-
 ## :satellite: IoT Device Simulation
 
 This is a minimal IoT device simulator built using [Node-RED](https://nodered.org/). It sends telemetry data to [Firebase Realtime Database](https://firebase.google.com/docs/database) for Farmassist app. There are 5 types of telemetry data:
@@ -33,19 +28,25 @@ The IoT device simulator is a Node-RED flow stored using JSON. The functions are
 - To run the simulator locally, you will need a supported version of Node.js and Node-RED editor.
 - To install Node.js, download the recent version from [here](https://nodejs.org/en/download/).
 - To install Node-RED editor, run:
-  ```
+
+  ```bash
   npm install -g --unsafe-perm node-red
   ```
+
 - Open Node-RED editor by running:
-  ```
+
+  ```bash
   node-red start
   ```
+
 - Open [http://localhost:1880](http://localhost:1880) to view the editor in the browser.
 - 2 extra node modules: `node-red-dashboard` and `node-red-contrib-firebase-data`, are required to run the simulator. `node-red-dashboard` is used to create a dashboard, whereas `node-red-contrib-firebase-data` is used to connect the nodes to Firebase Realtime Database. To install them, run:
-  ```
+
+ ```bash
   npm install node-red-dashboard
   npm install node-red-contrib-firebase-data
   ```
+
 - Download the JSON file and import it into the Node-RED editor. You will see the import option at the upper-right corner of the editor.
 
 ### Customize the simulator
@@ -56,9 +57,12 @@ The IoT device simulator is a Node-RED flow stored using JSON. The functions are
 - Open the dashboard, and use the sliders to select the range of the telemetry data you would want to send.
 - Toggle the switch to start/stop sending the telemetry data.
 
+>use the `docker run -it -p 1880:1880 -v node_red_data:/data --name farmassist-iot-simulation nodered/node-red` to lunch the docker app for red node.
+
 <br>
 
 ## :black_nib: References
 
 - [A YouTube tutorial teaching you how to build a Node-RED IoT Device Simulator](https://www.youtube.com/watch?v=2GcVvD08nGE)
 - [Reference for types of telemetry data from Microsoft Azure Virtual Hackathon 2020 in Asia Pacific](https://news.microsoft.com/apac/2020/08/20/drones-data-science-and-innovation-at-the-microsoft-azure-virtual-hackathon-in-asia-pacific/)
+- [IoT Application using Node Red & Google Firebase | Raspberry Pi](https://www.youtube.com/watch?v=IItfEkeh9cA&t=144s)

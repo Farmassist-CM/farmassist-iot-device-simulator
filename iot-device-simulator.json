@@ -130,7 +130,7 @@
       }
     },
     "site": {
-      "name": "IoT Device Simulator",
+      "name": "Farmassist IoT Device Simulator",
       "hideToolbar": "false",
       "allowSwipe": "false",
       "lockMenu": "false",
