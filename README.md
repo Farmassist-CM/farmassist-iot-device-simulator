@@ -13,6 +13,10 @@ This is a minimal IoT device simulator built using [Node-RED](https://nodered.or
 <p align="center"><i>Connected Nodes in Node-RED editor</i></p>
 
 <br>
+<p align=center><img src="/docs/img/firebase_data_schema.png"></p>
+<p align="center"><i>how should your firebase realtime database look like</i></p>
+
+<br>
 
 <p align=center><img src="/docs/img/ui.png"></p>
 <p align="center"><i>UI Dashboard of the IoT Device Simulator</i></p>
